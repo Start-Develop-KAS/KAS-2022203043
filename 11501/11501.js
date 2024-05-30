@@ -9,11 +9,6 @@ for (let i = 1; i < input.length; i += 2) {
     arr.push(input[i + 1].split(" ").map(Number));
 }
 
-// 1. 다음날이 떨어지고, 주식이 있다면 판다
-// 2. 다음날이 떨어지고, 주식이 없다면 다음날로 넘어간다
-// 3. 다음날이 그대로면, 주식을 산다
-// 4. 다음날이 오르면, 주식을 산다
-
 let profit;
 let myProfits = [];
 for (let i = 0; i < arr.length; ++i) {
